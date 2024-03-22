@@ -1,0 +1,248 @@
+{
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "build/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/v1/auth",
+      "dest": "server.js"
+    },
+    {
+      "src": "/api/v1/auth/(.*)",
+      "dest": "server.js"
+    },
+    {
+      "src": "/api/v1/category",
+      "dest": "server.js"
+    },
+    {
+      "src": "/api/v1/category/(.*)",
+      "dest": "server.js"
+    },
+    {
+      "src": "/api/v1/product",
+      "dest": "server.js"
+    },
+    {
+      "src": "/api/v1/product/(.*)",
+      "dest": "server.js"
+    },
+    {
+        "src": "/api/v1/register",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/register/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/login",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/login/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/forgot-password",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/forgot-password/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/user-auth",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/user-auth/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/test",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/test/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/admin-auth",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/admin-auth/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/profile",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/profile/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/orders",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/orders/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/all-orders",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/all-orders/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/order-status",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/order-status/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/create-category",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/create-category/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/update-category",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/update-category/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/get-all-category",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/get-all-category/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/get-single-category",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/get-single-category/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/delete-category",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/delete-category/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/create-product",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/create-product/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/update-product",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/update-product/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/get-product",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/get-product/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-photo",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-photo/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/delete-product",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/delete-product/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-filters",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-filters/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-count",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-count/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-list",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-list/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/search",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/search/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/related-product",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/related-product/(.*)",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-category",
+        "dest": "server.js"
+      },
+      {
+        "src": "/api/v1/product-category/(.*)",
+        "dest": "server.js"
+      }
+  ]
+}
+
+
